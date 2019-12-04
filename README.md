@@ -14,14 +14,14 @@ I'd love to connect with you to provide any help I can with learning Flutter. Pl
 You'll find solutions at several stages. Feel free to pick up a solution at any point and work on it from there. To run any solution, open it in IntelliJ or VS Code and run it through the debugger.
 
 - [Checkpoint 1](solutions/cp1) - The boilerplate app with a new TodoApp stateful widget. Super simple.
-- Checkpoint 2 - New Todo business class. Initialized `List<Todo>`. Iterating them as `Text()`s
-- Checkpoint 3 - Changed the Texts to ListTiles.
-- Checkpoint 4 - Tapping the Todo now toggles the check_box icon.
-- Checkpoint 5 - Added the AddTodo widget. Can navigate between the two scenes.
-- Checkpoint 6 - Added a TextFormField. Passing the todo description back to TodoApp.
-- Checkpoint 7 - Adding the new Todo to the list and re-rendering the scene to draw it.
-- Checkpoint 8 - InputDecorations added to the TextFormField
-- Checkpoint 9 - Reading and saving all Todos to shared preferences
+- [Checkpoint 2](solutions/cp2) - New Todo business class. Initialized `List<Todo>`. Iterating them as `Text()`s
+- [Checkpoint 3](solutions/cp3) - Changed the Texts to ListTiles.
+- [Checkpoint 4](solutions/cp4) - Tapping the Todo now toggles the check_box icon.
+- [Checkpoint 5](solutions/cp5) - Added the AddTodo widget. Can navigate between the two scenes.
+- [Checkpoint 6](solutions/cp6) - Added a TextFormField. Passing the todo description back to TodoApp.
+- [Checkpoint 7](solutions/cp7) - Adding the new Todo to the list and re-rendering the scene to draw it.
+- [Checkpoint 8](solutions/cps8) - InputDecorations added to the TextFormField
+- [Checkpoint 9](solutions/cp9) - Reading and saving all Todos to shared preferences
 
 
 ## Other cool resources
