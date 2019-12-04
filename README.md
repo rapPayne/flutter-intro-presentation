@@ -13,8 +13,10 @@ I'd love to connect with you to provide any help I can with learning Flutter. Pl
 ## Solutions
 You'll find solutions at several stages. Feel free to pick up a solution at any point and work on it from there. To run any solution, open it in IntelliJ or VS Code and run it through the debugger.
 
-- Checkpoint 1 - The boilerplate app with a new TodoApp stateful widget. Super simple.
-- Checkpoint 2 - New Todo business class. Initialized `List<Todo>`. Iterating them as `Text()`s
+|----|----|
+| Checkpoint 1 | The boilerplate app with a new TodoApp stateful widget. Super simple.|
+| Checkpoint 2 | New Todo business class. Initialized `List<Todo>`. Iterating them as `Text()`s|
+
 - Checkpoint 3 - Changed the Texts to ListTiles.
 - Checkpoint 4 - Tapping the Todo now toggles the check_box icon.
 - Checkpoint 5 - Added the AddTodo widget. Can navigate between the two scenes.
