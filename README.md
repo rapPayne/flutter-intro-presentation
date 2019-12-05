@@ -28,5 +28,8 @@ You'll find solutions at several stages. Feel free to pick up a solution at any 
 - Chapters 1-3 of my book: [https://www.amazon.com/dp/1484251806/](https://www.amazon.com/dp/1484251806/)
 - Google's installation instructions: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 - Google's Write your first Flutter App: [https://flutter.dev/docs/get-started/codelab](https://flutter.dev/docs/get-started/codelab)
-- 
+
+## Slidedeck
+Not sure why anyone would want them but the slide deck can be downloaded [here](slidedeck.pdf).
+
 > Written with [StackEdit](https://stackedit.io/).
