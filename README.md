@@ -1,7 +1,6 @@
 
 # flutter-intro-presentation
-Files to support Rap's Intro to Google Flutter Presentation
-
+Files to support Rap's Flutter First Steps Presentation
 
 ## Connect with Rap
 I'd love to connect with you to provide any help I can with learning Flutter. Please reach out.
@@ -29,7 +28,3 @@ You'll find solutions at several stages. Feel free to pick up a solution at any 
 - Google's installation instructions: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 - Google's Write your first Flutter App: [https://flutter.dev/docs/get-started/codelab](https://flutter.dev/docs/get-started/codelab)
 
-## Slidedeck
-Not sure why anyone would want them but the slide deck can be downloaded [here](slidedeck.pdf).
-
-> Written with [StackEdit](https://stackedit.io/).
