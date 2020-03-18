@@ -20,7 +20,7 @@ class AddTodo extends StatelessWidget {
 
   Widget get _body {
     return Container(
-      child: TextFormField(
+      child: TextField(
         onChanged: (val) {
           _todoDescription = val;
         },
