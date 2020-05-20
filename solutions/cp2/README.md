@@ -1,16 +1,19 @@
-# todo_app
+# Checkpoint 2
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Steps
+1. Add a Todo business class with id, description, and completed
+1. Add some Todos in the State widget.
+'''dart
+List<Todo> _todos = [
+  new Todo()..id=1..completed=false..description='Buy groceries',
+  new Todo()..id=2..completed=false..description='Workout',
+  new Todo()..id=3..completed=false..description='Wash the car',
+  new Todo()..id=4..completed=false..description='Get gifts for ',
+];
+'''
+1. Add a ListView() to the body:
+'''dart
+body: ListView(
+  children: _todos.map((todo) => Text(todo.description)).toList(),
+),
+'''
