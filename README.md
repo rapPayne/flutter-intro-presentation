@@ -4,7 +4,7 @@ Files to support Rap's Flutter First Steps Presentation
 
 ## Connect with Rap
 I'd love to connect with you to provide any help I can with learning Flutter. Please reach out.
-- Twitter: [@Rap_Payne](https://twitter.com/Rap_Payne)
+- Twitter: [@RapPayne](https://twitter.com/RapPayne)
 - LinkedIn: [RapPayne](https://www.linkedin.com/in/rappayne/)
 - Github: [RapPayne](https://github.com/rapPayne)
 - Web: AgileGadgets.com

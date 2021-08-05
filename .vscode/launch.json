@@ -1,0 +1,62 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "cp1",
+      "cwd": "solutions/cp1",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp2",
+      "cwd": "solutions/cp2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp3",
+      "cwd": "solutions/cp3",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp4",
+      "cwd": "solutions/cp4",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp5",
+      "cwd": "solutions/cp5",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp6",
+      "cwd": "solutions/cp6",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp7",
+      "cwd": "solutions/cp7",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp8",
+      "cwd": "solutions/cp8",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "cp9",
+      "cwd": "solutions/cp9",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}
