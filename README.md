@@ -28,3 +28,11 @@ You'll find solutions at several stages. Feel free to pick up a solution at any 
 - Google's installation instructions: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 - Google's Write your first Flutter App: [https://flutter.dev/docs/get-started/codelab](https://flutter.dev/docs/get-started/codelab)
 
+## To update solutions
+In a terminal window, run 
+```bash
+$ cd <folder>
+$ flutter channel stable
+$ flutter doctor  # Then follow the instructions
+$ flutter upgrade
+```

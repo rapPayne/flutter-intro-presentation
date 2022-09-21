@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AddTodo extends StatelessWidget {
-  String _todoDescription;
+class AddTodo extends StatefulWidget {
+  const AddTodo({Key? key}) : super(key: key);
+  @override
+  _AddTodoState createState() => _AddTodoState();
+}
+
+class _AddTodoState extends State<AddTodo> {
+  String _todoDescription = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

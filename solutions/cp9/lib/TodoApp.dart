@@ -10,7 +10,7 @@ class TodoApp extends StatefulWidget {
 
 class _TodoAppState extends State<TodoApp> {
   List<Todo> _todos = [];
-  SharedPreferences _prefs;
+  SharedPreferences? _prefs;
 
   _TodoAppState() {
     SharedPreferences.getInstance()
@@ -51,16 +51,16 @@ class _TodoAppState extends State<TodoApp> {
   Widget get _body {
     return ListView(
       children: _todos.map((todo) {
-        Icon icon = todo.completed
+        Icon icon = todo.completed ?? false
             ? Icon(Icons.check_box)
             : Icon(Icons.check_box_outline_blank);
         todo.description = todo.description ?? "";
         return ListTile(
           leading: icon,
-          title: Text(todo.description),
+          title: Text(todo.description ?? ""),
           onTap: () {
             setState(() {
-              todo.completed = !todo.completed;
+              todo.completed = !(todo.completed ?? false);
               saveTodos();
             });
           },
@@ -71,14 +71,14 @@ class _TodoAppState extends State<TodoApp> {
 
   int getNextId() {
     if (_todos.isEmpty) return 1;
-    _todos.sort((a, b) => a.id.compareTo(b.id));
-    return _todos.last.id + 1;
+    _todos.sort((a, b) => a.id ?? 0.compareTo(b.id ?? 0));
+    return _todos.last.id ?? 0 + 1;
   }
 
   void saveTodos() {
     print("saving");
     String prefsString = Todo.toJsonArray(_todos);
-    _prefs.setString('todos', prefsString).then((val) {
+    _prefs?.setString('todos', prefsString).then((val) {
       print('Successfully saved: $val');
     }).catchError((err) {
       print('Failed saving: $err');
@@ -86,7 +86,7 @@ class _TodoAppState extends State<TodoApp> {
   }
 
   List<Todo> readTodos() {
-    String todosString = _prefs.getString("todos");
+    String todosString = (_prefs?.getString("todos")) ?? "";
     return Todo.fromJsonArray(todosString);
   }
 }

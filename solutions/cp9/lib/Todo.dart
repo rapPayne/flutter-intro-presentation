@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 class Todo {
-  int id;
-  String description;
-  bool completed;
+  int? id;
+  String? description;
+  bool? completed = false;
 
   static String toJsonArray(List<Todo> todos) {
     List<Map<String, dynamic>> arrayOfMaps = todos
@@ -17,11 +17,13 @@ class Todo {
   }
 
   static List<Todo> fromJsonArray(String jsonString) {
-    List<dynamic> arrayOfDynamics = json.decode(jsonString).toList();  
-    List<Todo> arrayOfTodos = arrayOfDynamics.map((map) => Todo()
-      ..id = map["id"]
-      ..completed = map["completed"]
-      ..description = map["description"]).toList();
+    List<dynamic> arrayOfDynamics = json.decode(jsonString).toList();
+    List<Todo> arrayOfTodos = arrayOfDynamics
+        .map((map) => Todo()
+          ..id = map["id"]
+          ..completed = map["completed"]
+          ..description = map["description"])
+        .toList();
     return arrayOfTodos;
   }
 }
