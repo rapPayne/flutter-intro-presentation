@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TaskApp extends StatefulWidget {
-  const TaskApp({Key? key}) : super(key: key);
+class TaskList extends StatefulWidget {
+  const TaskList({Key? key}) : super(key: key);
 
   @override
-  State<TaskApp> createState() => _TaskAppState();
+  State<TaskList> createState() => _TaskListState();
 }
 
-class _TaskAppState extends State<TaskApp> {
+class _TaskListState extends State<TaskList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
