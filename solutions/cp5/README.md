@@ -8,4 +8,17 @@ We add navigation to the app.
 ```dart
 Navigator.push(context, MaterialPageRoute(builder: (ctx) => AddTodo()));
 ```
-1. 
+Add ability to add a new Todo. Return it from the AddTodo widget.
+
+1. Add a pop back to TodoApp
+```dart
+onPressed: () {
+  Navigator.pop(context, _todoDescription);
+},
+```
+1. On return from AddTodo widget, save the description.
+```dart
+onPressed: () async {
+  String description = await Navigator.push(context, MaterialPageRoute(builder: (ctx) => AddTodo()));
+  print(description);
+```
