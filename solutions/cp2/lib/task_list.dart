@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task_app/Task.dart';
+import 'task.dart';
 
 class TaskList extends StatefulWidget {
-  const TaskList({Key? key}) : super(key: key);
+  const TaskList({super.key});
 
   @override
   State<TaskList> createState() => _TaskListState();
@@ -11,35 +11,30 @@ class TaskList extends StatefulWidget {
 class _TaskListState extends State<TaskList> {
   List<Task> _tasks = [
     Task()
-      ..id = 1
+      ..id = 0
       ..completed = false
       ..description = 'Sign up for future course',
     Task()
+      ..id = 1
+      ..completed = false
+      ..description = 'Do something',
+    Task()
       ..id = 2
       ..completed = false
-      ..description = 'Task2',
+      ..description = 'Do another thing',
     Task()
       ..id = 3
       ..completed = false
-      ..description = 'Task3',
-    Task()
-      ..id = 4
-      ..completed = false
-      ..description = 'Task4',
+      ..description = 'Do a 3rd thing',
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Things I need to do today'),
-      ),
+      appBar: AppBar(title: Text('Stuff I need to do today.')),
       body: ListView(
-        children: _tasks.map((task) => Text(task.description)).toList(),
-      ),
+          children: _tasks.map((task) => Text(task.description)).toList()),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => print('pressed'),
-        child: const Icon(Icons.add),
-      ),
+          child: Icon(Icons.add), onPressed: () => print('Pressed')),
     );
   }
 }
