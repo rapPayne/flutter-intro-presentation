@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_app/TaskList.dart';
+import 'task_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,12 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Stuff I need to do',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.blue,
       ),
       home: const TaskList(),
     );
@@ -42,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              "You've pushed the button this many times:",
             ),
             Text(
               '$_counter',
@@ -55,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () => setState(() => _counter++),
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
