@@ -8,7 +8,7 @@ class AddTask extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("What's your new task?")),
-      body: Text('Task goes here'),
+      body: TextFormField(onChanged: (value) => _description=value,),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.pop<String>(context, _description);
