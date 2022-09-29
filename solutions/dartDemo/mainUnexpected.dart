@@ -1,3 +1,21 @@
+/*
+# Unexpected
+## Functions are objects
+- Note the foreach function
+
+## string templates with ${}
+- Change toString()
+
+## Named function parameters
+- Put construction parameters in curlys
+
+## Named constructors
+- Copy constructor. Won't work.
+- Make it Person.withName(String first, String last)
+
+## omit 'this.' and 'new'
+- Go thru. Remove them all. Ask if they like it better or worse
+*/
 void main() {
   Person p1 = Person(first: "Pam", last: "Beasley");
   Person p2 = Person.withName("Kelly", "Kapoor");
@@ -35,21 +53,5 @@ Ask for four more names. Make person objects
 Put them in a List<Person> team = [p1, p2, ...]
 Loop thru with forEach().
 
-# Unexpected
-## Functions are objects
-- Note the foreach function
-
-## string templates with ${}
-- Change toString()
-
-## Named function parameters
-- Put construction parameters in curlys
-
-## Named constructors
-- Copy constructor. Won't work.
-- Make it Person.withName(String first, String last)
-
-## omit this. and new
-- Go thru. Remove them all. Ask if they like it better or worse
 
  */
